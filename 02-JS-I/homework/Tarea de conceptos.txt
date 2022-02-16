@@ -1,0 +1,60 @@
+----------
+Variables:
+----------
+
+--> Una variable es la forma o método para almacenar o declarar una determinada información, que luego vamos a necesitar para resolver X o Y necesidad en programación.
+
+Por ejemplo:
+ 
+En el Java Script se usa la palabra "Var" para 	declarar una variable, o sea, para darle un nombre. Luego, la palabra "Var" debe estar seguida de un "espacio" para luego asignarle el Nombre a esa variable. Luego del nombre, debe ir el signo "=" que se utiliza para darle el valor a esa determinada variable. El valor de la variable puede ser en 3 tipos de datos, Strings (línea de caracteres), Números (Tal cual) o valores Booleanos (Falso o Verdadero). 
+
+Veamos el ejemplo: 
+
+Var variableejmplo = "hola" 
+
+En el ejemplo anterior se declara la variable llamada variableejemplo y se le asigna un valor de tipo de dato Strings "hola".
+
+			  
+--------
+Strings:
+--------
+
+--> Un Strings es un tipo de dato o tipo de dato informático, que se caracteriza por nombrarse o escribirse entre comillas "", en otras palabras, un String sería como una cadena de caracteres en el cual se podrían combinarse letras, números o todo tipo de caracteres.
+
+Por ejemplo: "ejemplo-de-unstring"    
+
+
+-------------------------------
+Funciones (argumentos, return):
+-------------------------------
+
+--> Las funciones son un tipo de objeto o subprograma configurado para agilizar el trabajo del programador, o sea, permiten dividir el trabajo que hace un programa, en tareas más pequeñas. Y se caracteriza o estar compuesto por un argumento o varios argumentos y un valor que retorna o entrega como resultado. 
+
+Los argumentos son las variables con que juega la programación interna de la función, para así entregar un resultado o retorno.
+
+Y los retornos o return serían las respuestas o salidas que entregaría la función.
+
+Por ejemplo: 
+
+function puedemanejar(edad) {
+	if (edad > 18) {
+	retun true;
+}
+	retun false;
+}
+	puedemanejar(25); // La respuesta sería True.
+
+
+-----------------
+Declaraciones if:
+-----------------
+
+--> Las Declaraciones if pertenesen a una familia de operadores de control de flujo, el cual, lo que hacen es verificar si la información se cumple o no, y entregar la respuesta respectiva según sea cada caso, ya sea verdadero o falso.
+
+
+--------------------------------
+Valores booleanos (true, false):
+--------------------------------
+
+
+--> Los valores booleanos true y false (verdadero y falso) son un tipo de dato lógico, o sea, que solo hay 2 respuestas, se cumple (verdadero) o no se cumple (falso),  estos a su vez representan la lógica binaria de 2 valores, falso o verdadero (true o false).
