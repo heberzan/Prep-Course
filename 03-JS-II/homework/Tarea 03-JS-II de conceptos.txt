@@ -1,0 +1,65 @@
+--------
+* `for`:
+--------
+
+El bucle "for" se utiliza para repetir el número de veces las instrucciones que deseemos. Para poder ejecutar con tranquilidad este bucle debemos estar seguro del número de veces que queremos que se ejecute.
+
+El bucle "for" está dividido en tres o contiene tres partes. 
+
+La primera parte es la iniciación, asignamos una variable que utilizaremos para llevar la cuenta de las veces que se ejecutará el bucle.
+
+La segunda parte es la condición que indicará cuándo se detiene el bucle, o mejor dicho, la condición que se debe cumplir para que continúe el bucle.
+
+Por último, tenemos la actualización, que sirve para indicarnos los cambios que queremos ejecutar en las variables cada vez que termina el bucle, y antes de comprobar si se debe seguir ejecutando.
+
+Después del for se colocan las instrucciones o sentencias que queremos que se ejecuten en cada bucle, y van entre llaves.
+
+Ejemplo de estructura: 
+
+for (iniciación; condición; actualización) { 
+   	//instrucciones a ejecutar en cada bucle. 
+}
+
+Ejemplo práctico: imprimir los números del 0 al 10.
+
+
+var i 
+for (i=0;i<=10;i++) { 
+   console.log(i)
+}
+
+
+
+------------------
+* `&&`, `||`, `!`:
+------------------
+
+---> El operador lógico "&&" (AND) es como si fuera una "y" literal. Es decir, se utiliza este operador para que se cumplan 2 o más condiciones. 
+
+Por ejemplo, se tienen que cumplir todas las condiciones que escribamos con el operador && para que se ejecuten las instrucciones de un IF. 
+
+ 
+if (num3 > num1 && num3 > num2) {
+    return num3 + 1;
+}
+
+---> El operador lógico "||" (OR) se comporta como una "O" literal. Es decir, se utiliza este operador para que se cumplan una de las condiciones. Por tanto, si una de las condiciones no se cumple el resultado es falso. Si cualquiera de sus argumentos es true, retorna true, de lo contrario retorna false.
+
+Ejemplo: 
+
+let hour = 9;
+
+if (hour < 10 || hour > 18) {
+  console.log( 'La oficina esta cerrada.' );
+} 
+
+
+---> El operador lógico NOT ( !), se comporta como una simple "negación", es decir, lleva la verdad a la falsedad y viceversa.
+
+Ejemplo:
+
+const a = 3;
+const b = -2;
+
+console.log(!(a > 0 || b > 0));
+// expected output: false
