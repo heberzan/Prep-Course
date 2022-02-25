@@ -1,0 +1,25 @@
+--------
+Arrays:
+--------
+
+Los Arrays (arreglos) son elementos agrupados en una misma variable y cada uno de ellos se ubica en una posición diferente. 
+
+Se pueden definir de varias formas:
+
+Ejemplo: 
+
+> Var Array = new Array(len)       	//Crea un array de len elementos .
+> Var Array = new Array(e1, e2...)	//Crea un array con ninguno o varios elementos.
+> Var = Array[e1, e2...]		//Simplemente, los elementos dentro de corchetes: []. Notación preferida.
+
+Ademas, al contrario de muchos otros lenguajes de programación, en Javascript se permite que se puedan realizar arrays de tipo mixto, no siendo obligatorio que todos los elementos sean del mismo tipo de dato.
+
+Ejemplo:
+
+// Forma tradicional
+const array = new Array("a", "b", "c");
+
+// Mediante literales (preferida)
+const array = ["a", "b", "c"]; 		// Array con 3 elementos
+const empty = []; 			// Array vacío (0 elementos)
+const mixto = ["a", 5, true]; 		// Array mixto (string, number, boolean)
