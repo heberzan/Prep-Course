@@ -1,0 +1,95 @@
+
+Homework: Javascript IV
+
+Conseptos:
+
+--------
+Objetos:
+--------
+
+Un objeto es una colección de datos relacionados o coleccion de datos con una funcionalidad. Estos datos generalmente están compuesto de variables y funciones, que a su vez son denominadas propiedades, o llamados métodos cuando las funciones están dentro de objetos. 
+
+Ejemplo: 
+
+var persona = {}; <--- Este es un Objeto vacio.
+
+Ejemplo de un Objeto con sus propiedades:
+
+var persona = {
+  nombre: ['Bob', 'Smith'],
+  edad: 32,
+  genero: 'masculino',
+  intereses: ['música', 'esquí'],
+  bio: function () {
+    alert(this.nombre[0] + '' + this.nombre[1] + ' tiene ' + this.edad + ' años. Le gusta ' + this.intereses[0] + ' y ' + this.intereses[1] + '.');
+  },
+  saludo: function() {
+    alert('Hola, Soy '+ this.nombre[0] + '. ');
+  }
+};
+
+Cada par de nombre/valor debe estar separado por una coma, y el nombre y el valor en cada caso deben están separados por dos puntos.
+
+
+------------
+Propiedades:
+------------
+
+Una propiedad es un objeto es un atributo o elemento interno que define una de las características del objeto como tal.
+
+Ejemplo: 
+
+En el ejemplo anterior el "nombre", "edad", "genero, "intereses", son las propiedades del objeto persona que creamos anteriormente.
+
+
+--------
+Métodos:
+--------
+
+Los métodos son las acciones que el objeto puede hacer.
+
+Ejemplo: 
+
+En el ejemplo del principio las propiedades "bio" y "saludo" son funciones o acciones que ejecutarí el objeto cuando se le solicite.
+
+
+-------------
+Bucle for…in:
+-------------
+
+El bucle for...in, lo que hace es iterar o hace recorridos sobre todas las propiedades y valores de un objeto.
+
+Su sintaxis es la siguiente:
+
+for (var propiedad in objeto){
+	// el código que se incluye dentro del for se ejecutará una vez por cada una de las propiedades del objeto.
+}
+
+Ejemplo:
+
+var diasMes = {
+    enero: 31,
+    febrero: 28,
+    marzo: 31,
+    abril: 30,
+    mayo: 31
+}
+
+for (var mes in diasMes){     // ---> este codigo imprime los meses del año.
+    console.log(mes);
+}
+
+
+
+--------------------------------------------
+Notación de puntos vs notación de corchetes:
+--------------------------------------------
+
+la Notación de puntos y la Notación de corchetes son dos formas de acceder a las propiedades o funciones de un objeto.
+
+La diferencia es que cuando usamos la notación de corchetes podemos acceder a las propiedades que tienen un espacio o carácter no permitido en la notación de punto 
+
+Por ejemplo: miMascota.numero de amigos no es válido, pero miMascota["numero de amigos"] sí lo es.
+
+Así que es mejor usar los corchetes aunque parezca más complicado.
+
